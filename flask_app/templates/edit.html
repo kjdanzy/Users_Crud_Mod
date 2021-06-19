@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="/static/css/style.css" />
+        <title>Edit User #{{ user.id }}</title>
+    </head>
+    <body>
+        <div class="container asCol">
+            <div class="asRow">
+                <div>
+                    <h1>Edit User #{{ user.id }}</h1>
+                </div>
+                <div><a href="/">Home</a></div>
+            </div>
+            <form action="/update_user" method="POST">
+                <input type="hidden" name="id" value="{{ user.id }}" />
+                <table class="table table-striped table-hover table-bordered">
+                    <tr>
+                        <th><label for="fname">First Name:</label></th>
+                        <td>
+                            <input
+                                type="text"
+                                name="first_name"
+                                value="{{ user.first_name }}"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="lname">Last Name:</label></th>
+                        <td>
+                            <input
+                                type="text"
+                                name="last_name"
+                                value="{{user.last_name}}"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">Email:</label></th>
+                        <td>
+                            <input
+                                type="text"
+                                name="email"
+                                value="{{user.email}}"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="occ">Occupation:</label></th>
+                        <td>
+                            <input
+                                type="text"
+                                name="occupation"
+                                value="{{user.occupation}}"
+                            />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <input
+                    type="submit"
+                    class="btn btn-primary"
+                    value="Update User"
+                />
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "sans-serif";
+}
+
+.topContainer {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-sm {
+    width: 20%;
+    height: 100pc;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    width: 70%;
+    height: 100px;
+    margin: 30px auto;
+}
+
+div.bottomContainer {
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+    height: 100px;
+}
+
+.fixedPosition {
+    position: fixed;
+    top: 130px;
+    left: 110px;
+}
+
+.asCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1em;
+}
+
+.asRow {
+    display: flex;
+    margin: 0 0;
+    justify-content: space-between;
+    justify-items: auto;
+    align-content: center;
+    align-items: center;
+}
+
+.asRowLeft {
+    display: flex;
+    justify-content: left;
+    align-content: flex-start;
+}
+
+span {
+    font-weight: bold;
+    height: 200px;
+}
+
+td.nowrap {
+    height: 200px;
+    font-size: x-large;
+}
+
+th {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    outline: none;
+}
